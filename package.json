@@ -1,7 +1,7 @@
 {
   "name": "remix-json-routes",
   "version": "0.1.0",
-  "description": "TODO",
+  "description": "A Remix package to allow custom route definition via JSON or React elements",
   "sideEffects": false,
   "main": "index.js",
   "author": "matt@brophy.org",
