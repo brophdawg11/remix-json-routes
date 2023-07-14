@@ -19,7 +19,7 @@ const { jsonRoutes } = require("remix-json-routes");
 module.exports = {
   // Note this ignores everything in routes/ giving you complete control over
   // your routes.  If you want to define routes in addition to what's in routes/,
-  // change this to "ignoredRouteFiles": ["**/*"].
+  // change this to "ignoredRouteFiles": ["**/.*"].
   ignoredRouteFiles: ["**/*"],
   routes(defineRoutes) {
     return jsonRoutes(defineRoutes, [
