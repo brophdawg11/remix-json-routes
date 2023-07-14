@@ -35,7 +35,7 @@ function createRoutesFromElements(children, parentPath = []) {
     let treePath = [...parentPath, index];
 
     if (element.type === React.Fragment) {
-      routes.push(createRoutesFromElements(element.props.children, treePath));
+      routes.push(...createRoutesFromElements(element.props.children, treePath));
       return;
     }
 
