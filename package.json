@@ -1,0 +1,30 @@
+{
+  "name": "remix-json-routes",
+  "version": "0.1.0",
+  "description": "TODO",
+  "sideEffects": false,
+  "main": "index.js",
+  "author": "matt@brophy.org",
+  "license": "ISC",
+  "homepage": "https://github.com/brophdawg11/remix-json-routes#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/brophdawg11/remix-json-routes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brophdawg11/remix-json-routes/issues"
+  },
+  "keywords": [
+    "remix",
+    "routes",
+    "json",
+    "jsx"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  }
+}
