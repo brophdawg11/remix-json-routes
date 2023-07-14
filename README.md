@@ -64,18 +64,12 @@ module.exports = (
 
 **Create a prebuild step to build `routes.js`**
 
-We'll need to install some babel tooling to perform this transpilation:
-
-```sh
-npm i babel-cli babel-preset-react
-```
-
-Then, add `jsxroutes`, `prebuild`, and `predev` scripts to your `package.json` so we always build a fresh version of `routes.jsx` to `routes.js` before `npm run build` and `npm run dev`:
+Add a `jsxroutes` script to `package.json` that will transpile `routes.jsx` to `routes.js`, then add `prebuild`/`predev` scripts so we always build a fresh version of `routes.js` before `npm run build`/`npm run dev`:
 
 ```json
 {
   "scripts": {
-    "jsxroutes": "babel --presets react routes.jsx > routes.js",
+    "jsxroutes": "esbuild routes.jsx --format=cjs --outfile=routes.js",
     "prebuild": "npm run jsxroutes",
     "predev": "npm run jsxroutes",
     "build": "remix build",
