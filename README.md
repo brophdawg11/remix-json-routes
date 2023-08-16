@@ -10,6 +10,8 @@ npm install remix-json-routes
 
 ## Using JSON Routes
 
+[Check out the example app in examples/](examples/remix-json-routes)
+
 You leverage this package via the `routes` function in `remix.config.js`. The second argument to `jsonRoutes` is an array of routes similar to what you would pass to [`createBrowserRouter`](https://reactrouter.com/en/main/routers/create-browser-router) in React Router, where you define the route path information (`path`, `index`, `children`), but then instead of specifying an `element`/`action`/`loader`/etc., you specify the `file` path pointing to a Remix route file which exports those aspects.
 
 ```js
@@ -43,6 +45,8 @@ module.exports = {
 ```
 
 ## Using JSX Routes
+
+[Check out the example app in examples/](examples/remix-jsx-routes)
 
 `remix.config.js` does not support JSX out of the box, but with a small prebuild step you can also define your routes with JSX. The easiest way to do this is to put your JSX route definitions in a `route.jsx` file that is transpiled to a `routes.js` file as a prebuild step which you can then `require` from `remix.config.js`.
 
